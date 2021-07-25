@@ -1,6 +1,12 @@
+@keyframes example {
+  0%   {background-image: url('bn.jpg');}
+  25%  {background-image: url('watch.jpg');}
+  50%  {background-image: url('tiger.jpg');}
+  75% {background-image: url('sh.jpg');}
+  100% {background-image: url('li.jpg');}
 
  
-
+}
 div {
   text-align: center;
  
@@ -56,14 +62,15 @@ h2{
 }
 
 h3{
-  color : white;
+  color : black;
 }
+
+
 
 h7{
-  color: beige;
+  color : black;
+  font-size: 30px;
 }
-
-
 
 
 tr{
@@ -133,7 +140,7 @@ p{
   }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .dropdown {
     display: visible ;
   }
