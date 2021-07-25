@@ -1,0 +1,144 @@
+
+ 
+
+div {
+  text-align: center;
+ 
+
+
+  
+ 
+}
+label{
+  color:white;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 10;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  color:white;
+ 
+}
+
+ a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-style: solid;
+  border-color: black;
+ 
+}
+
+h5 {
+  width: 320px;
+  padding: 10px;
+  border: 5px solid black;
+  margin: 0;
+  background-color:lightblue;
+}
+
+
+  
+
+
+
+h2{
+  color :black;
+  font-size: 20px ;
+  
+}
+
+h3{
+  color : white;
+}
+
+h7{
+  color: beige;
+}
+
+
+
+
+tr{
+  background-color: lightblue;
+  color: black
+}
+p{
+  color:lightblue;
+}
+
+.cart-price {
+  
+  color:green;
+}
+
+.cart-header {
+  font-weight: bold;
+  font-size: 1.25em;
+  color: white;
+}
+
+.cart-column {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid palevioletred;
+  margin-right: 1.5em;
+ padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+
+
+
+
+.shop-item-image{
+  color:green;
+  
+
+}
+
+.shop-item-title{
+  color:palevioletred;
+}
+
+.cart-total{
+  color: white;
+
+}
+
+.dropdown-content {
+  display: none;
+
+  background-color: black;
+  float: right;
+  
+ 
+}
+
+.dropdown:hover .dropdown-content {
+  display: list-item;
+}
+
+
+@media screen and (max-width: 600px) {
+  .dropdown1 {
+    display: none;
+  }
+
+
+@media screen and (max-width: 600px) {
+  .dropdown {
+    display: visible ;
+  }
+
+ 
+} 
+
+} 
