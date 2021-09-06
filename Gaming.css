@@ -28,7 +28,13 @@
   float:right;
   width:200px;
   height: 20px;
-  background: #0000ff;
+  background: black;
+}
+
+#camj {
+  width:100%;
+  text-align:center;
+ display: none;
 }
 
 @media (max-width: 500px) {                  
@@ -42,4 +48,9 @@
     visibility: visible;
     display: list-item;
  }
+
+ #camj {
+  visibility: visible;
+  display: list-item;
+}
 }
