@@ -70,7 +70,7 @@
      
        
            
-           <div style="background-color: black;" class="col-md-12">
+           <div style="background-image: url(h1.png);" class="col-md-12">
             <div class="shop-item">
          
             <h3 style= color:lightblue;">Welcome to Forcecoin</h3>
@@ -82,7 +82,7 @@
 
               <h7  style="color: lightblue;"> Forcecoin  is a new open source peer-to-peer digital currency, 100% community driven.</h7>
               <br>
-             
+             </div>
               <br>
               <button class="btn btn-primary shop-item-button" style="background-image: url(chart.PNG);border: none; ; width: 95px; height: 40px;
          background-size: 100px 40px; " onclick="location.href=&#39; https://pancakeswap.finance/?hl=en&#39;"
@@ -92,13 +92,51 @@
      
                <button style="background-color: black; border-radius: 25px; background-size: 100px 40px;;border:2px solid lightblue; ; width: 100px; height: 55px; color: white;" type="button"  onclick="location.href=&#39; https://forcecoin.net/#buy/?hl=en&#39;;" >How to buy</button>
                <button style="background-color: black; border-radius: 25px; background-size: 100px 40px;;border:2px solid lightblue; ; width: 100px; height: 55px; color: white;" type="button"  onclick="location.href=&#39; https://charts.bogged.finance/?hl=en&#39;" >FRC Chart</button>
-               <button style="background-color: black; border-radius: 25px; background-size: 100px 40px;;border:2px solid lightblue; ; width: 125px; height: 55px; color: white;" type="button"  onclick="location.href=&#39; https://pancakeswap.finance/?hl=en&#39;" >Panckakeswap</button>
+               <button style="background-color: black; border-radius: 25px; background-size: 100px 40px;;border:2px solid lightblue; ; width: 125px; height: 53px; color: white;" type="button"  onclick="location.href=&#39; https://pancakeswap.finance/?hl=en&#39;" >Panckakeswap</button>
               <br>
               <h7  style="color: lightblue;"> Realeasing soon !!</h7>
-              <br>
+
+              <div style="background-image: url(h2.PNG);" class="col-md-12">
+<!-- Display the countdown timer in an element -->
+<p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Oct 5, 2021 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+                </div>
+            
               <br>
             </div>
          
+            
             <img class="shop-item-image" src="tes1.PNG" width="280" height="250"> 
 
             <div id="container">
@@ -136,7 +174,9 @@
       </div>
 
 
-    
+        
+           
+      <div style="background-image: url(h2.PNG);" class="col-md-12">
   
       <div style="" id="love" class="col-md-12">
       <h3 style="color: lightblue;"> Forcecoin Statistics</h3>
@@ -151,13 +191,16 @@
         <p style="color: lightgreen;" id="p2">Liquidity:  $8,000 </p>
         <p style="color: lightgreen;" id="p3">Token Adress: Releasing once Liquidity is locked</p>
         <p style="color: lightgreen;" id="p3">Listed Platforms when launched: Panckake Swap, BoggedFinance, Poocoins </p>
-   
+        <img  class="shop-item-image" src="upd1.PNG" width="340" height="75">
+        <br>
+        <br>
         <img  class="shop-item-image" src="uparrow.PNG" width="200" height="25">
         <br>
         <br>
         <br>
-      
-       
+        <br>
+        <br>
+       </div>
         <div  id="container2">
         <div style="" id="love" class="col-md-12">
         <h3 style="color: lightblue;"> What is Forcecoin? </h3>
@@ -228,24 +271,31 @@
 </div>
 
 </div>
- 
-  
+<div id="container">
+  <div id="left" > 
+   
 
-  
-    
-    
-      
-      <div style="background-color: black;" class="col-md-12">
-
- <h3 style="color: lightblue;"> Swap for any Smartchain token below   </h3>.
- <img  class="shop-item-image" src="downarrow.PNG" width="200" height="25">
-
- <br>
- <br>
- 
-        <iframe style="border-radius: 50px; border-color: lightblue;" src="https://app.bogged.finance/swap?tokenIn=BNB&tokenOut=0x030C458361a472e43Ce0290e13e83908f3461871A&embed=1" height="690px" width="320" ></iframe> 
+      <h3 style="color: lightblue;"> Swap for any Smartchain token below   </h3>.
+      <img  class="shop-item-image" src="downarrow.PNG" width="200" height="25">
+      <br>
+      <br>
+      <iframe style="border-radius: 50px; border-color: lightblue;" src="https://app.bogged.finance/swap?tokenIn=BNB&tokenOut=0x030C458361a472e43Ce0290e13e83908f3461871A&embed=1" height="690px" width="320" ></iframe> 
       
 
+</div>
+
+  
+<div id="right"> 
+  <h3 style="color: lightblue;"> Video Guide</h3>
+
+
+
+
+                <iframe width="350" height="315" src="https://www.youtube.com/embed/QvfEDh-haF4"
+         title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+         <img  class="shop-item-image" src="uparrow.PNG" width="200" height="25">   
+            </div>
    
 
  <br>
@@ -255,14 +305,14 @@
 
     <button style="background-color: black; border-radius: 100px; background-size: 100px 40px;;border:2px solid lightblue; ; width: 40px; height: 40px; color: white;" type="button"  onclick="alert('You pressed the button!')" >1</button>
 <br>
-<br>
-
-
-<h3 style="color: lightblue;"> Create a Trustwallet and Metamask</h3>
 
 
 
-<br>
+<h4 style="color: lightblue;"> Create a Trustwallet and Metamask</h4>
+
+
+
+
 
 <button class="btn btn-primary shop-item-button" style="background-image: url(trus1.PNG);border: none; ; width: 95px; height: 41px;
 background-size: 100px 40px; " onclick="location.href=&#39https://trustwallet.com&#39;;"
@@ -271,7 +321,7 @@ background-size: 100px 40px; " onclick="location.href=&#39https://trustwallet.co
       <button class="btn btn-primary shop-item-button" style="background-image: url(metamask.PNG);border: none; ; width: 95px; height: 41px;
 background-size: 100px 40px; " onclick="location.href=&#39https://metamask.io&#39;;"
       ;="" type="button"></button>
-      <br>
+      
       <br>
 <img  class="shop-item-image" src="uparrow.PNG" width="200" height="25">
 <br>
@@ -279,18 +329,18 @@ background-size: 100px 40px; " onclick="location.href=&#39https://metamask.io&#3
 <button style="background-color: black; border-radius: 100px; background-size: 100px 40px;;border:2px solid lightblue; ; width: 40px; height: 40px; color: white;" type="button"  onclick="alert('You pressed the button!')" >2</button>
 <br>
 
-<br>
 
 
-<h3 style="color: lightblue;"> Buy BNB on Trustwallet</h3>
-<br>
+
+<h4 style="color: lightblue;"> Buy BNB on Trustwallet</h4>
+
 
 
 
       <button class="btn btn-primary shop-item-button" style="background-image: url(bnb.PNG);border: none; ; width: 95px; height: 41px;
 background-size: 100px 40px; " onclick="alert('You pressed the button!')"
       ;="" type="button"></button>
-      <br>s
+      
       <br>
 
 
@@ -300,10 +350,10 @@ background-size: 100px 40px; " onclick="alert('You pressed the button!')"
       <br>
       <button style="background-color: black; border-radius: 100px; background-size: 100px 40px;;border:2px solid lightblue; ; width: 40px; height: 40px; color: white;" type="button"  onclick="alert('You pressed the button!')" >3</button>
       <br>
-      <br>
+     
 
-      <h3 style="color: lightblue;"> Connect your wallet to Panckakeswap or BoggedFinance</h3>
-      <br>
+      <h4 style="color: lightblue;"> Connect your wallet to Panckakeswap or BogSwap</h3>
+     
 
       <button class="btn btn-primary shop-item-button" style="background-image: url(Pan.PNG);border: none; ; width: 95px; height: 42px;
           background-size: 100px 40px; " onclick="location.href=&#39https://pancakeswap.finance/?hl=en&#39;"
@@ -313,7 +363,7 @@ background-size: 100px 40px; " onclick="alert('You pressed the button!')"
           <button class="btn btn-primary shop-item-button" style="background-image: url(bog.jfif);border: none; ; width: 95px; height: 45px;
           background-size: 100px 40px; " onclick="location.href=&#39;//charts.bogged.finance/?hl=en&#39;"
                 ;="" type="button"></button>
-                <br>
+                
                 <br>
                 <img  class="shop-item-image" src="uparrow.PNG" width="200" height="25">
 <br>
@@ -322,36 +372,159 @@ background-size: 100px 40px; " onclick="alert('You pressed the button!')"
 
 <button style="background-color: black; border-radius: 100px; background-size: 100px 40px;;border:2px solid lightblue; ; width: 40px; height: 40px; color: white;" type="button"  onclick="alert('You pressed the button!')" >4</button>
 <br>
-<br>
-<h3 style="color: lightblue;"> Swap BNB for Forcecoin token Address releasing soon:</h3>
-<br>
+
+<h4 style="color: lightblue;"> Swap BNB for Forcecoin token Address releasing soon:</h3>
+
 <!-- The text field -->
 <input style="color: white; background-color: black; width: 350px; height: 50px; border-radius: 20px;" type="text" value="0x30" id="myInput">
 <br>
 <br>
 <!-- The button used to copy the text -->
-<button style="background-color: purple;" onclick="myFunction()">Copy to clipboard</button>
+<button style="background-color: purple; border-radius: 20px;" onclick="myFunction()">Copy to clipboard</button>
+
 
 <br>
+
+
+
+<img  class="shop-item-image" src="uparrow.PNG" width="200" height="25">
+<br>
+<br>
+<br>
+
+<br>
+<br>
+
+</div>
+<div style="background-image: url(h2.PNG);"  class="col-md-12">
+  
+   
+  <div id="camj">
+
+      <h3 style="color: lightblue;"> Swap for any Smartchain token below   </h3>.
+      <img  class="shop-item-image" src="downarrow.PNG" width="200" height="25">
+      <br>
+      <br>
+      <iframe style="border-radius: 50px; border-color: lightblue;" src="https://app.bogged.finance/swap?tokenIn=BNB&tokenOut=0x030C458361a472e43Ce0290e13e83908f3461871A&embed=1" height="690px" width="320" ></iframe> 
+      
+
+
+
+  
+
+  <h3 style="color: lightblue;"> Video Guide</h3>
+
+
+
+
+                <iframe width="350" height="315" src="https://www.youtube.com/embed/QvfEDh-haF4"
+         title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+         <img  class="shop-item-image" src="uparrow.PNG" width="200" height="25">   
+           
+   
+
+ <br>
+    <h3  style="color: lightblue;"> Quick Start Guide</h3>
+    <br>
+  
+
+    <button style="background-color: black; border-radius: 100px; background-size: 100px 40px;;border:2px solid lightblue; ; width: 40px; height: 40px; color: white;" type="button"  onclick="alert('You pressed the button!')" >1</button>
+<br>
+
+
+
+<h4 style="color: lightblue;"> Create a Trustwallet and Metamask</h4>
+
+
+
+
+
+<button class="btn btn-primary shop-item-button" style="background-image: url(trus1.PNG);border: none; ; width: 95px; height: 41px;
+background-size: 100px 40px; " onclick="location.href=&#39https://trustwallet.com&#39;;"
+      ;="" type="button"></button>
+
+      <button class="btn btn-primary shop-item-button" style="background-image: url(metamask.PNG);border: none; ; width: 95px; height: 41px;
+background-size: 100px 40px; " onclick="location.href=&#39https://metamask.io&#39;;"
+      ;="" type="button"></button>
+      
+      <br>
+<img  class="shop-item-image" src="uparrow.PNG" width="200" height="25">
+<br>
+<br>
+<button style="background-color: black; border-radius: 100px; background-size: 100px 40px;;border:2px solid lightblue; ; width: 40px; height: 40px; color: white;" type="button"  onclick="alert('You pressed the button!')" >2</button>
+<br>
+
+
+
+
+<h4 style="color: lightblue;"> Buy BNB on Trustwallet</h4>
+
+
+
+
+      <button class="btn btn-primary shop-item-button" style="background-image: url(bnb.PNG);border: none; ; width: 95px; height: 41px;
+background-size: 100px 40px; " onclick="alert('You pressed the button!')"
+      ;="" type="button"></button>
+      
+      <br>
+
+
+
+      <img  class="shop-item-image" src="uparrow.PNG" width="200" height="25">
+      <br>
+      <br>
+      <button style="background-color: black; border-radius: 100px; background-size: 100px 40px;;border:2px solid lightblue; ; width: 40px; height: 40px; color: white;" type="button"  onclick="alert('You pressed the button!')" >3</button>
+      <br>
+     
+
+      <h4 style="color: lightblue;"> Connect your wallet to Panckakeswap or BogSwap</h3>
+     
+
+      <button class="btn btn-primary shop-item-button" style="background-image: url(Pan.PNG);border: none; ; width: 95px; height: 42px;
+          background-size: 100px 40px; " onclick="location.href=&#39https://pancakeswap.finance/?hl=en&#39;"
+                ;="" type="button"></button>
+  
+ 
+          <button class="btn btn-primary shop-item-button" style="background-image: url(bog.jfif);border: none; ; width: 95px; height: 45px;
+          background-size: 100px 40px; " onclick="location.href=&#39;//charts.bogged.finance/?hl=en&#39;"
+                ;="" type="button"></button>
+                
+                <br>
+                <img  class="shop-item-image" src="uparrow.PNG" width="200" height="25">
+<br>
+<br>
+
+
+<button style="background-color: black; border-radius: 100px; background-size: 100px 40px;;border:2px solid lightblue; ; width: 40px; height: 40px; color: white;" type="button"  onclick="alert('You pressed the button!')" >4</button>
+<br>
+
+<h4 style="color: lightblue;"> Swap BNB for Forcecoin token Address releasing soon:</h3>
+
+<!-- The text field -->
+<input style="color: white; background-color: black; width: 350px; height: 50px; border-radius: 20px;" type="text" value="0x30" id="myInput">
+<br>
+<br>
+<!-- The button used to copy the text -->
+<button style="background-color: purple; border-radius: 20px;" onclick="myFunction()">Copy to clipboard</button>
+
+
 <br>
 
 
 
 <img  class="shop-item-image" src="uparrow.PNG" width="200" height="25">
-<br>
-<br>
-<br>
-<h3 style="color: lightblue;"> Video Guide</h3>
+</div>
 
 
-<img  class="shop-item-image" src="uparrow.PNG" width="200" height="25">
+</div>
 
-<br>
-<br>
+<div style=""  class="col-md-12">
+
 <br>
 <br>
 <h3 style="color: lightblue;"> Need support? Contact us 24/7  forcecoin7@gmail.com</h3>
-<br>
+
 
           <button class="btn btn-primary shop-item-button" style="background-image: url(twit.PNG);border: none; ; width: 95px; height: 42px;
           background-size: 100px 40px; " onclick="location.href=&#39https://twitter.com/forcecoin7&#39;;"
@@ -361,6 +534,13 @@ background-size: 100px 40px; " onclick="alert('You pressed the button!')"
           <button class="btn btn-primary shop-item-button" style="background-image: url(insta.PNG);border: none; ; width: 95px; height: 45px;
           background-size: 100px 40px; " onclick="location.href=&#39;//www.instagram.com/forcecoin1/?hl=en&#39;"
                 ;="" type="button"></button>
+                <button class="btn btn-primary shop-item-button" style="background-image: url(tic.PNG);border: none; ; width: 87px; height: 47px;
+                background-size: 100px 40px; " onclick="location.href=&#39;//www.instagram.com/forcecoin1/?hl=en&#39;"
+                      ;="" type="button"></button>
+                <button class="btn btn-primary shop-item-button" style="background-image: url(tel2.PNG);border: none; ; width: 95px; height: 44px;
+          background-size: 100px 40px; " onclick="location.href=&#39;https://t.me/joinchat/Tk9tZFCPT9AyZmRh/?hl=en&#39;"
+                ;="" type="button"></button>
+
   
       <div class="col-md-12">
    
@@ -368,7 +548,7 @@ background-size: 100px 40px; " onclick="alert('You pressed the button!')"
         
 
       </div>
-      <br>
+     
      
       
   
