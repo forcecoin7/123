@@ -364,7 +364,7 @@ background-size: 100px 40px; " onclick="location.href=&#39https://metamask.io&#3
 
 
 
-      <button class="btn btn-primary shop-item-button" style="background-image: url(bnb.PNG);border: none; ; width: 95px; height: 41px;
+      <button class="btn btn-primary shop-item-button" style="background-image: url(bnb1.PNG);border: none; ; width: 95px; height: 41px;
 background-size: 100px 40px; " onclick="alert('You pressed the button!')"
       ;="" type="button"></button>
       
@@ -523,7 +523,7 @@ background-size: 100px 40px; " onclick="location.href=&#39https://metamask.io&#3
       
       
       
-            <button class="btn btn-primary shop-item-button" style="background-image: url(bnb.PNG);border: none; ; width: 95px; height: 41px;
+            <button class="btn btn-primary shop-item-button" style="background-image: url(bnb1.PNG);border: none; ; width: 95px; height: 41px;
       background-size: 100px 40px; " onclick="alert('You pressed the button!')"
             ;="" type="button"></button>
             
@@ -618,6 +618,77 @@ background-size: 100px 40px; " onclick="location.href=&#39https://metamask.io&#3
 
     
     <br>  
+
+    <link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/gh/bitquery/widgets@v1.3.8/dist/assets/css/widgets.css">
+<script src="https://cdn.jsdelivr.net/gh/bitquery/widgets@v1.3.8/dist/widgets.js"></script>
+<div id="trades_by_time"></div>
+<script>
+    (function(){
+    widgets.init('https://graphql.bitquery.io', 'BQY8IPItkNCP0iK8BqvmhSWV1px51210', {locale: 'en', theme: 'light'});
+    var query = new widgets.query(`
+            query ($network: EthereumNetwork!,
+                  $dateFormat: String!,
+                  $token: String!,
+                  $from: ISO8601DateTime,
+                  $till: ISO8601DateTime){
+                    ethereum(network: $network ){
+                      dexTrades(options:{asc: "date.date"}, date: {
+                        since: $from
+                        till: $till}
+                        baseCurrency: {is: $token}
+                      ) {
+                        date: date{
+                          date(format: $dateFormat)
+                        }
+
+                            trades: count
+                            amount: baseAmount
+                            baseCurrency{symbol}
+                            contracts: count(uniq: smart_contracts)
+                            currencies: count(uniq: quote_currency)
+
+                      }
+                    }
+                  }`);
+    var wdts = new widgets.chartByTime('#trades_by_time', query, 'ethereum.dexTrades', {
+ "title": "Trades by time",
+ "chartOptions": {
+   
+  "vAxes": {
+   
+   "0": {
+    
+    "title": "FRC Trades Count",
+  
+
+   }
+  },
+  "seriesType": "lines",
+  "series": {
+   "0": {
+    "color": "#ADD8E6"
+   }
+  }
+ },
+ "dataOptions": [
+  {
+   "title": {
+    "label": "Date",
+    "type": "date",
+    
+   },
+   "path": "date.date"
+   
+  },
+  {
+   "title": " FRC Trades Volume (Testing Mode)" ,
+   "path": "trades"
+  }
+ ]
+});
+    query.request( {"limit": 10, "offset": 0, "network": "bsc", "token": "0x030c458361a472e43ce0290e13e83908f3461871", "from": null, "till": null, "dateFormat": "%Y-%m"} );
+    })()
+</script>
 
       
     
@@ -721,7 +792,18 @@ function myFunction4() {
 
       
       
-      </script>  </marquee>
+      </script>
+      
+    
+    
+    
+    
+    
+    </marquee>
+
+
+
+
      </ul>
       
      
