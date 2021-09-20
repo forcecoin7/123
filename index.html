@@ -45,9 +45,15 @@
          </button>
           <div sytle="display:none; float:right" class="dropdown-content">
             <br><br>
-            <a style="color: lightblue;" href="https://forcecoin.net/#Intro">Forcecoin Intro</a>
+            <a style="color: lightblue;" href="//eve.kean.edu/~medelluc/#buy">How to Buy</a>
             <br>
-            <a style="color: lightblue;" href="//eve.kean.edu/~medelluc/#buy">Objective</a>
+            <br>
+            <a style="color: lightblue;" href="//eve.kean.edu/~medelluc/#buy">Video Guide</a>
+            <br>
+            <a style="color: lightblue;" href="https://forcecoin.net/#Intro">What is forcecoin</a>
+            <br>
+            <br>
+            <a style="color: lightblue;" href="https://forcecoin.net/#Intro">Join Telegram</a>
             <br>
             <a style="color: lightblue;" href="https://forcecoin.net/#Crypto1">Contact us</a>
           </div>
@@ -94,6 +100,10 @@
                <button style="background-color: black; border-radius: 25px; background-size: 100px 40px;;border:2px solid lightblue; ; width: 100px; height: 55px; color: white;" type="button"  onclick="location.href=&#39; https://charts.bogged.finance/?hl=en&#39;" >FRC Chart</button>
                <button style="background-color: black; border-radius: 25px; background-size: 100px 40px;;border:2px solid lightblue; ; width: 125px; height: 53px; color: white;" type="button"  onclick="location.href=&#39; https://pancakeswap.finance/?hl=en&#39;" >Panckake swap</button>
               <br>
+
+              <marquee behavior="scroll" direction="right">   
+                <h7  style="color: lightblue;"> Join our Telegram group !!</h7>
+               </marquee>
               <h7  style="color: lightblue;"> Realeasing soon !!</h7>
 
               <div style="background-image: url(h2.PNG);" class="col-md-12">
@@ -620,7 +630,7 @@ background-size: 100px 40px; " onclick="location.href=&#39https://metamask.io&#3
     <br>  
 
     <link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/gh/bitquery/widgets@v1.3.8/dist/assets/css/widgets.css">
-<script  src="https://cdn.jsdelivr.net/gh/bitquery/widgets@v1.3.8/dist/widgets.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/bitquery/widgets@v1.3.8/dist/widgets.js"></script>
 <div id="trades_by_time"></div>
 <script>
     (function(){
@@ -663,10 +673,10 @@ background-size: 100px 40px; " onclick="location.href=&#39https://metamask.io&#3
 
    }
   },
-  "seriesType": "lines",
+  "seriesType": "bars",
   "series": {
    "0": {
-    "color": "#008000"
+    "color": "#800080"
    }
   }
  },
@@ -681,30 +691,29 @@ background-size: 100px 40px; " onclick="location.href=&#39https://metamask.io&#3
    
   },
   {
-   "title": " FRC Trades Volume (Testing Mode)" ,
+   "title": " FRC Trades Volume",
    "path": "trades"
   }
+
+  
  ]
 });
     query.request( {"limit": 10, "offset": 0, "network": "bsc", "token": "0x030c458361a472e43ce0290e13e83908f3461871", "from": null, "till": null, "dateFormat": "%Y-%m"} );
     })()
 
-
-
+    
 </script>
 
-
-
-
-<h3 style="color: green;"> Forcecoin Transactions (Testing Mode)</h3>
+<h3 style="color:purple;"> Forcecoin Transactions (Test Mode)</h3>
 <br>
 <link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/gh/bitquery/widgets@v1.3.8/dist/assets/css/widgets.css">
 <script src="https://cdn.jsdelivr.net/gh/bitquery/widgets@v1.3.8/dist/widgets.js"></script>
 <div id="smart_contract_transactions"></div>
 
-
+<ul style="color: pink;"></ul>
 
 <script id="left">
+  
     (function(){
     widgets.init('https://graphql.bitquery.io', 'BQY8IPItkNCP0iK8BqvmhSWV1px51210', {locale: 'en', theme: 'light'});
     var query = new widgets.query(`query ($network: EthereumNetwork!,
@@ -719,6 +728,7 @@ background-size: 100px 40px; " onclick="location.href=&#39https://metamask.io&#3
                     smartContractAddress: {is: $address}) {
 
                     block {
+                      
                       timestamp {
                         time (format: "%Y-%m-%d %H:%M:%S")
                       }
@@ -778,10 +788,116 @@ background-size: 100px 40px; " onclick="location.href=&#39https://metamask.io&#3
   
  ]
 });
+
     query.request({"limit": 10, "offset": 0, "network": "bsc", "address": "0x030c458361a472e43ce0290e13e83908f3461871", "from": null, "till": null, "dateFormat": "%Y-%m"});
     })()
+
+ 
 </script>
 
+    
+     <ul id="Crypto1" style="background-color: black;">
+       
+        <marquee behavior="scroll" direction="right">   
+          <p><span id="datetime"></span></p>
+      
+      <script>
+      var dt = new Date();
+      document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+      
+      
+      function copyTextToClipboard(text) {
+  var textArea = document.createElement("textarea");
+  textArea.value = text
+  document.body.appendChild(textArea);
+  textArea.focus();
+  textArea.select();
+
+  try {
+    var successful = document.execCommand('copy');
+    var msg = successful ? 'successful' : 'unsuccessful';
+    console.log('Copying text command was ' + msg);
+  } catch (err) {
+    console.log('Oops, unable to copy');
+  }
+
+  document.body.removeChild(textArea);
+}
+function myFunction() {
+  /* Get the text field */
+  var copyText = document.getElementById("myInput");
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+   /* Copy the text inside the text field */
+  navigator.clipboard.writeText(copyText.value);
+
+  /* Alert the copied text */
+  alert("Copied the text: " + copyText.value);
+}
+      
+function myFunction1() {
+  /* Get the text field */
+  var copyText = document.getElementById("myInput1");
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+   /* Copy the text inside the text field */
+  navigator.clipboard.writeText(copyText.value);
+
+  /* Alert the copied text */
+  alert("Copied the text: " + copyText.value);
+} 
+
+function myFunction2() {
+  /* Get the text field */
+  var copyText = document.getElementById("myInput2");
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+   /* Copy the text inside the text field */
+  navigator.clipboard.writeText(copyText.value);
+
+  /* Alert the copied text */
+  alert("Copied the text: " + copyText.value);
+} 
+
+function myFunction3() {
+  /* Get the text field */
+  var copyText = document.getElementById("myInput3");
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+   /* Copy the text inside the text field */
+  navigator.clipboard.writeText(copyText.value);
+
+  /* Alert the copied text */
+  alert("Copied the text: " + copyText.value);
+} 
+
+function myFunction4() {
+  /* Get the text field */
+  var copyText = document.getElementById("myInput4");
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+   /* Copy the text inside the text field */
+  navigator.clipboard.writeText(copyText.value);
+
+  /* Alert the copied text */
+  alert("Copied the text: " + copyText.value);
+} 
+
+
+      
+      
+      </script>
+      
     
      <ul id="Crypto1" style="background-color: black;">
        
@@ -899,6 +1015,10 @@ function myFunction4() {
       
      
     </div>  
+
+
+
+    
     
    
  </div></body></html>
