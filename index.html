@@ -45,10 +45,10 @@
          </button>
           <div sytle="display:none; float:right" class="dropdown-content">
             <br><br>
-            <a style="color: lightblue;" href="//eve.kean.edu/~medelluc/#buy">How to Buy</a>
+            <a style="color: lightblue;" href="https://forcecoin.net/#Intro">How to Buy</a>
             <br>
             <br>
-            <a style="color: lightblue;" href="//eve.kean.edu/~medelluc/#buy">Video Guide</a>
+            <a style="color: lightblue;" href="https://forcecoin.net/#Intro">Video Guide</a>
             <br>
             <a style="color: lightblue;" href="https://forcecoin.net/#Intro">What is forcecoin</a>
             <br>
@@ -105,10 +105,15 @@
                 <h7  style="color: lightblue;"> Join our Telegram group !!</h7>
                </marquee>
               <h7  style="color: lightblue;"> Realeasing soon !!</h7>
+<br>
+<p id="demo"></p>
+              <h7  style="color: lightblue;"> Click below to donate to the team</h7>
+              <br>
+              <button style="background-color: black; border-radius: 25px; background-size: 100px 40px;;border:2px solid lightblue; ; width: 100px; height: 55px; color: white;" type="button"  onclick="location.href=&#39; https://www.paypal.com/paypalme/forcecoin/?hl=en&#39;" >Donate</button>
 
               <div style="background-image: url(h2.PNG);" class="col-md-12">
 <!-- Display the countdown timer in an element -->
-<p id="demo"></p>
+
 
 <script>
 // Set the date we're counting down to
@@ -698,7 +703,7 @@ background-size: 100px 40px; " onclick="location.href=&#39https://metamask.io&#3
   
  ]
 });
-    query.request( {"limit": 10, "offset": 0, "network": "bsc", "token": "0x030c458361a472e43ce0290e13e83908f3461871", "from": null, "till": null, "dateFormat": "%Y-%m"} );
+    query.request( {"limit": 10, "offset": 0, "network": "bsc", "token": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c", "from": null, "till": null, "dateFormat": "%Y-%m"} );
     })()
 
     
@@ -726,10 +731,12 @@ background-size: 100px 40px; " onclick="location.href=&#39https://metamask.io&#3
                   smartContractCalls(options:{desc: "block.timestamp.time", limit: $limit, offset: $offset},
                     date: {since: $from till: $till },
                     smartContractAddress: {is: $address}) {
+                      
 
                     block {
                       
                       timestamp {
+                        
                         time (format: "%Y-%m-%d %H:%M:%S")
                       }
                       height
@@ -752,13 +759,15 @@ background-size: 100px 40px; " onclick="location.href=&#39https://metamask.io&#3
                   }
                 }
               }`);
-    var wdts = new widgets.table('#smart_contract_transactions', query, 'ethereum.smartContractCalls', {
+              
+    var  wdts = new widgets.table('#smart_contract_transactions', query, 'ethereum.smartContractCalls', {
  "title": "Latest Transactions",
  "dataOptions": [
   {
    "title": "Timestamp",
    "type": "string",
    "path": "block.timestamp.time"
+   
   },
   {
    "title": "Block",
@@ -789,7 +798,7 @@ background-size: 100px 40px; " onclick="location.href=&#39https://metamask.io&#3
  ]
 });
 
-    query.request({"limit": 10, "offset": 0, "network": "bsc", "address": "0x030c458361a472e43ce0290e13e83908f3461871", "from": null, "till": null, "dateFormat": "%Y-%m"});
+    query.request({"limit": 10, "offset": 0, "network": "bsc", "address": "0x030C458361a472e43Ce0290e13e83908f3461871", "from": null, "till": null, "dateFormat": "%Y-%m"});
     })()
 
  
@@ -806,7 +815,7 @@ background-size: 100px 40px; " onclick="location.href=&#39https://metamask.io&#3
       document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
       
       
-      function copyTextToClipboard(text) {
+      function copyTextToClipboard(text) {mnn
   var textArea = document.createElement("textarea");
   textArea.value = text
   document.body.appendChild(textArea);
