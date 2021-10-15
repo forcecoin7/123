@@ -20,7 +20,7 @@
     <div class="col-md-12">
       
 
-      <nav>  <ul style="background-color:black;">
+      <nav>  <ul style="background-image: url(h123.png);">
         
          
          <br>
@@ -70,7 +70,7 @@
      
        
            
-           <div style="background-image: url(h1.png);" class="col-md-12">
+           <div style="background-image: url(h12.PNG);" class="col-md-12">
             <div class="shop-item">
          
             <h3 style= color:lightblue;">Welcome to Forcecoin</h3>
@@ -96,10 +96,101 @@
                <button style="background-color: black; border-radius: 25px; background-size: 100px 40px;;border:2px solid lightblue; ; width: 125px; height: 53px; color: white;" type="button"  onclick="location.href=&#39; https://pancakeswap.finance/?hl=en&#39;" >Panckake swap</button>
                <button style="background-color: black; border-radius: 25px; background-size: 100px 40px;;border:2px solid lightblue; ; width: 100px; height: 55px; color: white;" type="button"  onclick="location.href=&#39; https://www.paypal.com/paypalme/forcecoin/?hl=en&#39;" >Donate</button>
                <br>
+               <br>
+               <button class="btn btn-primary shop-item-button" style="background-image: url(twit.PNG);border: none; ; width: 95px; height: 42px;
+          background-size: 100px 40px; " onclick="location.href=&#39https://twitter.com/forcecoin7&#39;;"
+                ;="" type="button"></button>
+  
+ 
+          <button class="btn btn-primary shop-item-button" style="background-image: url(insta.PNG);border: none; ; width: 95px; height: 45px;
+          background-size: 100px 40px; " onclick="location.href=&#39;//www.instagram.com/forcecoin1/?hl=en&#39;"
+                ;="" type="button"></button>
+                <button class="btn btn-primary shop-item-button" style="background-image: url(tic.PNG);border: none; ; width: 87px; height: 47px;
+                background-size: 100px 40px; " onclick="location.href=&#39;//www.instagram.com/forcecoin1/?hl=en&#39;"
+                      ;="" type="button"></button>
+                <button class="btn btn-primary shop-item-button" style="background-image: url(tel2.PNG);border: none; ; width: 95px; height: 44px;
+          background-size: 100px 40px; " onclick="location.href=&#39;https://t.me/joinchat/Tk9tZFCPT9AyZmRh/?hl=en&#39;"
+                ;="" type="button"></button>
+                <br>
+                
               <h7  style="color: lightblue;"> Launching to the Moon in</h7>
                                          <p id="demo"></p>
               
-              <br>
+      
+
+              <link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/gh/bitquery/widgets@v1.3.8/dist/assets/css/widgets.css">
+              <script src="https://cdn.jsdelivr.net/gh/bitquery/widgets@v1.3.8/dist/widgets.js"></script>
+              <div id="trades_by_time"></div>
+              <script>
+                  (function(){
+                  widgets.init('https://graphql.bitquery.io', 'BQY8IPItkNCP0iK8BqvmhSWV1px51210', {locale: 'en', theme: 'light'});
+                  var query = new widgets.query(`
+                          query ($network: EthereumNetwork!,
+                                $dateFormat: String!,
+                                $token: String!,
+                                $from: ISO8601DateTime,
+                                $till: ISO8601DateTime){
+                                  ethereum(network: $network ){
+                                    dexTrades(options:{asc: "date.date"}, date: {
+                                      since: $from
+                                      till: $till}
+                                      baseCurrency: {is: $token}
+                                    ) {
+                                      date: date{
+                                        date(format: $dateFormat)
+                                      }
+                                          trades: count
+                                          amount: baseAmount
+                                          baseCurrency{symbol}
+                                          contracts: count(uniq: smart_contracts)
+                                          currencies: count(uniq: quote_currency)
+                                    }
+                                  }
+                                }`);
+                  var wdts = new widgets.chartByTime('#trades_by_time', query, 'ethereum.dexTrades', {
+               "title": "Trades by time",
+               "chartOptions": {
+                 
+                "vAxes": {
+                 
+                 "0": {
+                  
+                  "title": "FRC Trades Count",
+                
+              
+                 }
+                },
+                "seriesType": "bars",
+                "series": {
+                 "0": {
+                  "color": "#800080"
+                 }
+                }
+               },
+               "dataOptions": [
+                {
+                 "title": {
+                  "label": "Date",
+                  "type": "date",
+                  
+                 },
+                 "path": "date.date"
+                 
+                },
+                {
+                 "title": " FRC Trades Volume",
+                 "path": "trades"
+                }
+              
+                
+               ]
+              });
+                  query.request( {"limit": 10, "offset": 0, "network": "bsc", "token": "0x030C458361a472e43Ce0290e13e83908f3461871", "from": null, "till": null, "dateFormat": "%Y-%m"} );
+                  })()
+              
+                  
+              </script>
+                           
              
 
 
@@ -203,7 +294,7 @@ var x = setInterval(function() {
 
         
            
-      <div style="background-image: url(h1.PNG);" class="col-md-12">
+      <div style="background-image: url(h12.PNG);" class="col-md-12">
   
       
         <div  id="container2">
@@ -586,18 +677,18 @@ background-size: 100px 40px; " onclick="location.href=&#39https://metamask.io&#3
                 ;="" type="button"></button>
 
   
-      <div class="col-md-12">
+      <div style="background-image: url(h12.png);" class="col-md-12">
    
        
         
 
-      </div>
+     
      
      
       
   
     
-    <form id="Crypto1" style="background-color: black; color:limegreen; border-radius: 20px;  " action="mailto:forcecoin7@gmail.com" method="post" enctype="text/plain">
+    <form id="Crypto1" style="background-image: url(h12.png); color:limegreen; border-radius: 20px;  " action="mailto:forcecoin7@gmail.com" method="post" enctype="text/plain">
     
       
     
@@ -619,85 +710,12 @@ background-size: 100px 40px; " onclick="location.href=&#39https://metamask.io&#3
     
     </form>
 
-    
+</div>
 
     
     <br>  
 
-    <link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/gh/bitquery/widgets@v1.3.8/dist/assets/css/widgets.css">
-<script src="https://cdn.jsdelivr.net/gh/bitquery/widgets@v1.3.8/dist/widgets.js"></script>
-<div id="trades_by_time"></div>
-<script>
-    (function(){
-    widgets.init('https://graphql.bitquery.io', 'BQY8IPItkNCP0iK8BqvmhSWV1px51210', {locale: 'en', theme: 'light'});
-    var query = new widgets.query(`
-            query ($network: EthereumNetwork!,
-                  $dateFormat: String!,
-                  $token: String!,
-                  $from: ISO8601DateTime,
-                  $till: ISO8601DateTime){
-                    ethereum(network: $network ){
-                      dexTrades(options:{asc: "date.date"}, date: {
-                        since: $from
-                        till: $till}
-                        baseCurrency: {is: $token}
-                      ) {
-                        date: date{
-                          date(format: $dateFormat)
-                        }
-
-                            trades: count
-                            amount: baseAmount
-                            baseCurrency{symbol}
-                            contracts: count(uniq: smart_contracts)
-                            currencies: count(uniq: quote_currency)
-
-                      }
-                    }
-                  }`);
-    var wdts = new widgets.chartByTime('#trades_by_time', query, 'ethereum.dexTrades', {
- "title": "Trades by time",
- "chartOptions": {
-   
-  "vAxes": {
-   
-   "0": {
     
-    "title": "FRC Trades Count",
-  
-
-   }
-  },
-  "seriesType": "bars",
-  "series": {
-   "0": {
-    "color": "#800080"
-   }
-  }
- },
- "dataOptions": [
-  {
-   "title": {
-    "label": "Date",
-    "type": "date",
-    
-   },
-   "path": "date.date"
-   
-  },
-  {
-   "title": " FRC Trades Volume",
-   "path": "trades"
-  }
-
-  
- ]
-});
-    query.request( {"limit": 10, "offset": 0, "network": "bsc", "token": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c", "from": null, "till": null, "dateFormat": "%Y-%m"} );
-    })()
-
-    
-</script>
 
 <h3 style="color:purple;"> Forcecoin Transactions (Test Mode)</h3>
 <br>
@@ -722,7 +740,6 @@ background-size: 100px 40px; " onclick="location.href=&#39https://metamask.io&#3
                     date: {since: $from till: $till },
                     smartContractAddress: {is: $address}) {
                       
-
                     block {
                       
                       timestamp {
@@ -735,12 +752,10 @@ background-size: 100px 40px; " onclick="location.href=&#39https://metamask.io&#3
                       name
                       signatureHash
                     }
-
                     address: caller {
                       address
                       annotation
                     }
-
                     transaction {
                       hash
                     }
