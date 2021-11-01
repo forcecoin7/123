@@ -20,7 +20,7 @@
     <div class="col-md-12">
       
 
-      <nav>  <ul style="background-color:black;">
+      <nav>  <ul style="background-image: url(blackspace1.jpg);">
         
          
          <br>
@@ -45,9 +45,11 @@
          </button>
           <div sytle="display:none; float:right" class="dropdown-content">
             <br><br>
-            <a style="color: lightblue;" href="https://forcecoin.net/#Intro">Forcecoin Intro</a>
+            <a style="color: lightblue;" href="https://forcecoin.net/#tobuy">How to buy</a>
             <br>
-            <a style="color: lightblue;" href="//eve.kean.edu/~medelluc/#buy">Objective</a>
+            <a style="color: lightblue;" href="https://forcecoin.net/#Intro">FRC Volume</a>
+            <br>
+            <a style="color: lightblue;" href="https://charts.bogged88.finance/0x030C458361a472e43Ce0290e13e83908f3461871">FRC chart</a>
             <br>
             <a style="color: lightblue;" href="https://forcecoin.net/#Crypto1">Contact us</a>
           </div>
@@ -70,7 +72,7 @@
      
        
            
-           <div style="background-image: url(h1.png);" class="col-md-12">
+           <div style="background-image: url(blackspace1.jpg);" class="col-md-12">
             <div class="shop-item">
          
             <h3 style= color:lightblue;">Welcome to Forcecoin</h3>
@@ -91,26 +93,121 @@
               <br>
               <br>
      
-               <button style="background-color: black; border-radius: 25px; background-size: 100px 40px;;border:2px solid lightblue; ; width: 105px; height: 55px; color: white;" type="button"  onclick="location.href=&#39; https://forcecoin.net/#buy/?hl=en&#39;;" >How to buy</button>
-               <button style="background-color: black; border-radius: 25px; background-size: 100px 40px;;border:2px solid lightblue; ; width: 100px; height: 55px; color: white;" type="button"  onclick="location.href=&#39; https://charts.bogged.finance/?hl=en&#39;" >FRC Chart</button>
-               <button style="background-color: black; border-radius: 25px; background-size: 100px 40px;;border:2px solid lightblue; ; width: 125px; height: 53px; color: white;" type="button"  onclick="location.href=&#39; https://pancakeswap.finance/?hl=en&#39;" >Panckake swap</button>
+               <button style="background-color: purple; border-radius: 25px; background-size: 100px 40px;;border:2px solid lightblue; ; width: 105px; height: 55px; color: white;" type="button"  onclick="location.href=&#39; https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/forcecoin7/123/blob/main/Forcecoin%20Instructions.pdf/?hl=en&#39;;" >Instructions</button>
+               <a style="color: lightblue;  border-radius: 25px; background-size: 100px 40px;;border:2px solid lightblue; ; width: 105px; height: 55px; color: white;" href="https://charts.bogged.finance/0x030C458361a472e43Ce0290e13e83908f3461871">FRC chart</a>
+               <button style="background-color: black; border-radius: 25px; background-size: 100px 40px;;border:2px solid lightblue; ; width: 125px; height: 53px; color: white;" type="button"  onclick="location.href=&#39; https://pancakeswap.finance/?hl=en&#39;" >pancakeswap</button>
                <button style="background-color: black; border-radius: 25px; background-size: 100px 40px;;border:2px solid lightblue; ; width: 100px; height: 55px; color: white;" type="button"  onclick="location.href=&#39; https://www.paypal.com/paypalme/forcecoin/?hl=en&#39;" >Donate</button>
+       
                <br>
+               <br>
+               <h4 style="color: lightblue;"> Forcecoin Adress:</h3>
+
+                <!-- The text field -->
+                <input style="color: white; background-color: black; width: 350px; height: 50px; border-radius: 20px;" type="text" value="0x030C458361a472e43Ce0290e13e83908f3461871" id="myInput">
+                <br>
+                <br>
+                <button style="background-color: purple; border-radius: 20px;" onclick="myFunction()">Copy to clipboard</button>
+                <br>
+                <br>
+               <button class="btn btn-primary shop-item-button" style="background-image: url(twit.PNG);border: none; ; width: 95px; height: 42px;
+          background-size: 100px 40px; " onclick="location.href=&#39https://twitter.com/forcecoin7&#39;;"
+                ;="" type="button"></button>
+  
+ 
+          <button class="btn btn-primary shop-item-button" style="background-image: url(insta.PNG);border: none; ; width: 95px; height: 45px;
+          background-size: 100px 40px; " onclick="location.href=&#39;//www.instagram.com/forcecoin1/?hl=en&#39;"
+                ;="" type="button"></button>
+                <button class="btn btn-primary shop-item-button" style="background-image: url(tic.PNG);border: none; ; width: 87px; height: 47px;
+                background-size: 100px 40px; " onclick="location.href=&#39;//www.instagram.com/forcecoin1/?hl=en&#39;"
+                      ;="" type="button"></button>
+                <button class="btn btn-primary shop-item-button" style="background-image: url(tel2.PNG);border: none; ; width: 95px; height: 44px;
+          background-size: 100px 40px; " onclick="location.href=&#39;https://t.me/joinchat/Tk9tZFCPT9AyZmRh/?hl=en&#39;"
+                ;="" type="button"></button>
+
+                <br>
+                
               <h7  style="color: lightblue;"> Launching to the Moon in</h7>
                                          <p id="demo"></p>
               
-              <br>
+      
+
+              <link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/gh/bitquery/widgets@v1.3.8/dist/assets/css/widgets.css">
+              <script src="https://cdn.jsdelivr.net/gh/bitquery/widgets@v1.3.8/dist/widgets.js"></script>
+              <div id="trades_by_time"></div>
+              <script>
+                  (function(){
+                  widgets.init('https://graphql.bitquery.io', 'BQY8IPItkNCP0iK8BqvmhSWV1px51210', {locale: 'en', theme: 'light'});
+                  var query = new widgets.query(`
+                          query ($network: EthereumNetwork!,
+                                $dateFormat: String!,
+                                $token: String!,
+                                $from: ISO8601DateTime,
+                                $till: ISO8601DateTime){
+                                  ethereum(network: $network ){
+                                    dexTrades(options:{asc: "date.date"}, date: {
+                                      since: $from
+                                      till: $till}
+                                      baseCurrency: {is: $token}
+                                    ) {
+                                      date: date{
+                                        date(format: $dateFormat)
+                                      }
+                                          trades: count
+                                          amount: baseAmount
+                                          baseCurrency{symbol}
+                                          contracts: count(uniq: smart_contracts)
+                                          currencies: count(uniq: quote_currency)
+                                    }
+                                  }
+                                }`);
+                  var wdts = new widgets.chartByTime('#trades_by_time', query, 'ethereum.dexTrades', {
+               "title": "Trades by time",
+               "chartOptions": {
+                 
+                "vAxes": {
+                 
+                 "0": {
+                  
+                  "title": "FRC Trades Count",
+                
+              
+                 }
+                },
+                "seriesType": "bars",
+                "series": {
+                 "0": {
+                  "color": "#800080"
+                 }
+                }
+               },
+               "dataOptions": [
+                {
+                 "title": {
+                  "label": "Date",
+                  "type": "date",
+                  
+                 },
+                 "path": "date.date"
+                 
+                },
+                {
+                 "title": " FRC Trades Volume",
+                 "path": "trades"
+                }
+              
+                
+               ]
+              });
+                  query.request( {"limit": 10, "offset": 0, "network": "bsc", "token": "0x030C458361a472e43Ce0290e13e83908f3461871", "from": null, "till": null, "dateFormat": "%Y-%m"} );
+                  })()
+              
+                  
+              </script>
+                           
              
 
 
-              <div id="container">
-                <div id="left" > 
-                    <h3 style= color:lightblue;>What is forcecoin </h3>
-  
-                    <iframe width="350" height="315" src="https://www.youtube.com/embed/ROBjIletmCI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <h3 id=Intro style="color: lightblue;"> </h3>. 
-     </div>
-              <div style="background-image: url(h2.PNG);" class="col-md-12">
+           
 
 
 
@@ -159,32 +256,14 @@ var x = setInterval(function() {
 }, 1000);
 </script>
 
-                </div>
+           
             
               <br>
             </div>
          
             
            
-              <div id="center"> 
-               
-              
-                      
-            
-                  <img class="shop-item-image" src="tes1.PNG" width="280" height="250"> 
-                    <h3 style="color: lightblue;"> Forcecoin Token Statistics</h3>
-      
-      
-      
-                    <img  class="shop-item-image" src="downarrow.PNG" width="200" height="25">
-      
-                    <p style="color: lightgreen;" id="p1">Total Supply:     $226,142,246,534</p>
-                    <p style="color: lightgreen;" id="p3">Token Adress: Releasing 11/01/21</p>
-                    <p style="color: lightgreen;" id="p3">Listed Platforms: Panckake Swap, BoggedFinance, Dextools </p>
-      
-      
-              </div>
-        
+             
 
 
               
@@ -203,26 +282,12 @@ var x = setInterval(function() {
 
         
            
-      <div style="background-image: url(h1.PNG);" class="col-md-12">
+      <div style="background-image: url(blackspace1.jpg);" class="col-md-12">
   
       
         <div  id="container2">
         <div style="" id="love" class="col-md-12">
-        <h3 style="color: lightblue;"> What is Forcecoin? </h3>
         
-        <br>
-      
-  <img  class="shop-item-image" src="downarrow.PNG" width="200" height="25">
-        <br>
-
-  
-  <iframe width="350" height="315" src="https://www.youtube.com/embed/ROBjIletmCI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <h3 id=Intro style="color: lightblue;"> </h3>. 
-
-  
-  <img  class="shop-item-image" src="uparrow.PNG" width="200" height="25">
-
-  <br>
   
       </div>
 <br>
@@ -231,48 +296,13 @@ var x = setInterval(function() {
 
 
       <div style="" id="love" class="col-md-12">
-        <br>
-        <h3 id=Intro style="color: lightblue;"> Forcecoin Gold Token</h3>. 
-        <br>
-
-        <img  class="shop-item-image" src="downarrow.PNG" width="200" height="25">
-        <br>
-            
+        
+     
+        
+  
 
      
        
-        <iframe width="350" height="315" src="https://www.youtube.com/embed/bxCuVbwRiIQ" 
-        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        
-    
-      
-         <h3 id=Intro style="color: lightblue;"> </h3>. 
-     
-          <img  class="shop-item-image" src="uparrow.PNG" width="200" height="25">
-  
-  <br>
-  <br>
-     
-        <br>
-        <h3 id=Intro style="color: lightblue;"> Forcecoin Intro</h3>. 
-        <img  class="shop-item-image" src="downarrow.PNG" width="200" height="25">
-        <br>
-        <br>
-            
-
-     
-       
-        <iframe width="350" height="315" src="https://www.youtube.com/embed/QvfEDh-haF4"
-         title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        
-    
-      
-         <h3 id=Intro style="color: lightblue;"> </h3>. 
-     
-          <img  class="shop-item-image" src="uparrow.PNG" width="200" height="25">
-  
-  <br>
-  <br>
 </div>
 
 </div>
@@ -303,112 +333,94 @@ var x = setInterval(function() {
             </div>
    
 
- <br>
-    <h3 id='buy' style="color: lightblue;"> Quick Start Guide</h3>
-    <br>
-  
-
-    <button style="background-color: black; border-radius: 100px; background-size: 100px 40px;;border:2px solid lightblue; ; width: 40px; height: 40px; color: white;" type="button"  onclick="alert('You pressed the button!')" >1</button>
-<br>
-
-
-
-<h4 style="color: lightblue;"> Create a Trustwallet and Metamask</h4>
-
-
-
-
-
-<button class="btn btn-primary shop-item-button" style="background-image: url(trus1.PNG);border: none; ; width: 95px; height: 41px;
-background-size: 100px 40px; " onclick="location.href=&#39https://trustwallet.com&#39;;"
-      ;="" type="button"></button>
-
-      <button class="btn btn-primary shop-item-button" style="background-image: url(metamask.PNG);border: none; ; width: 95px; height: 41px;
-background-size: 100px 40px; " onclick="location.href=&#39https://metamask.io&#39;;"
-      ;="" type="button"></button>
-      
-      <br>
-<img  class="shop-item-image" src="uparrow.PNG" width="200" height="25">
-<br>
-<br>
-<button style="background-color: black; border-radius: 100px; background-size: 100px 40px;;border:2px solid lightblue; ; width: 40px; height: 40px; color: white;" type="button"  onclick="alert('You pressed the button!')" >2</button>
-<br>
-
-<h4 style="color: lightblue;"> Connect metamask to Smartchain network</h4>
-
-      <input style="color: white; background-color: black; width: 100px; height: 50px; border-radius: 20px;" type="text" value="Smart Chain" id="myInput">
-      <button style="background-color: purple; border-radius: 20px;" onclick="myFunction()">Copy </button>
-      
-      <input style="color: white; background-color: black; width: 250px; height: 50px; border-radius: 20px;" type="text" value="https://bsc-dataseed.binance.org/" id="myInput1">
-      <button style="background-color: purple; border-radius: 20px;" onclick="myFunction1()">Copy </button>
-      <br>
-      <br>
-      <input style="color: white; background-color: black; width: 50px; height: 50px; border-radius: 20px;" type="text" value="56" id="myInput2">
-      <button style="background-color: purple; border-radius: 20px;" onclick="myFunction2()">Copy </button>
-     
-      
-      <input style="color: white; background-color: black; width: 56px; height: 50px; border-radius: 20px;" type="text" value=" BNB" id="myInput3">
-      <button style="background-color: purple; border-radius: 20px;" onclick="myFunction3()">Copy </button>
-   
-      <input style="color: white; background-color: black; width: 150px; height: 50px; border-radius: 20px;" type="text" value="https://bscscan.com" id="myInput4">
-      <button style="background-color: purple; border-radius: 20px;" onclick="myFunction4()">Copy </button>
-      
-      
-
-      <br>
-
-
-      <br>
-<button style="background-color: black; border-radius: 100px; background-size: 100px 40px;;border:2px solid lightblue; ; width: 40px; height: 40px; color: white;" type="button"  onclick="alert('You pressed the button!')" >3</button>
-<br>
-
-
-
-<h4 style="color: lightblue;"> Buy BNB on Trustwallet</h4>
-
-
-
-
-      <button class="btn btn-primary shop-item-button" style="background-image: url(bnb1.PNG);border: none; ; width: 95px; height: 41px;
-background-size: 100px 40px; " onclick="alert('You pressed the button!')"
-      ;="" type="button"></button>
-      
-      <br>
-
-
-
-      <img  class="shop-item-image" src="uparrow.PNG" width="200" height="25">
-      <br>
-      <br>
-      <button style="background-color: black; border-radius: 100px; background-size: 100px 40px;;border:2px solid lightblue; ; width: 40px; height: 40px; color: white;" type="button"  onclick="alert('You pressed the button!')" >4</button>
-      <br>
-     
-
-      <h4 style="color: lightblue;"> Connect your wallet to Panckakeswap or BogSwap</h3>
-     
-
-      <button class="btn btn-primary shop-item-button" style="background-image: url(Pan.PNG);border: none; ; width: 95px; height: 42px;
-          background-size: 100px 40px; " onclick="location.href=&#39https://pancakeswap.finance/?hl=en&#39;"
-                ;="" type="button"></button>
-  
- 
-          <button class="btn btn-primary shop-item-button" style="background-image: url(bog.jfif);border: none; ; width: 95px; height: 45px;
-          background-size: 100px 40px; " onclick="location.href=&#39;//charts.bogged.finance/?hl=en&#39;"
-                ;="" type="button"></button>
-                
-                <br>
-                <img  class="shop-item-image" src="uparrow.PNG" width="200" height="25">
-<br>
-<br>
-
-
-<button style="background-color: black; border-radius: 100px; background-size: 100px 40px;;border:2px solid lightblue; ; width: 40px; height: 40px; color: white;" type="button"  onclick="alert('You pressed the button!')" >5</button>
-<br>
-
-<h4 style="color: lightblue;"> Swap BNB for Forcecoin token Address releasing soon:</h3>
+            <br>
+            <h3  style="color: lightblue;"> Quick Start Guide</h3>
+            <br>
+          
+            <h4 style="color: lightblue;"> Click below to read the pdf Instructions</h3>
+            
+              <button style="background-color: purple; border-radius: 25px; background-size: 100px 40px;;border:2px solid lightblue; ; width: 105px; height: 55px; color: white;" type="button"  onclick="location.href=&#39; https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/forcecoin7/123/blob/main/Forcecoin%20Instructions.pdf/?hl=en&#39;;" >Instructions</button>
+              <br>
+              <br>
+               <button style="background-color: black; border-radius: 100px; background-size: 100px 40px;;border:2px solid lightblue; ; width: 40px; height: 40px; color: white;" type="button"  onclick="alert('You pressed the button!')" >1</button>
+        <br>
+        
+        
+        
+        <h4 style="color: lightblue;"> Create a Trustwallet and Coin98 Wallet</h4>
+        
+        
+        
+        
+        
+        <button class="btn btn-primary shop-item-button" style="background-image: url(trus1.PNG);border: none; ; width: 95px; height: 41px;
+        background-size: 100px 40px; " onclick="location.href=&#39https://trustwallet.com&#39;;"
+              ;="" type="button"></button>
+        
+              <button class="btn btn-primary shop-item-button" style="background-image: url(90.PNG);border: none; ; width: 93px; height: 43px;
+        background-size: 100px 40px; " onclick="location.href=&#39https://metamask.io&#39;;"
+              ;="" type="button"></button>
+              
+              <br>
+        <img  class="shop-item-image" src="uparrow.PNG" width="200" height="25">
+        <br>
+        <br>
+        
+              <button style="background-color: black; border-radius: 100px; background-size: 100px 40px;;border:2px solid lightblue; ; width: 40px; height: 40px; color: white;" type="button"  onclick="alert('You pressed the button!')" >2</button>
+              <br>
+             
+              <h4 style="color: lightblue;"> Buy BNB on Trustwallet</h4>
+              
+              
+              
+              
+                    <button class="btn btn-primary shop-item-button" style="background-image: url(bnb1.PNG);border: none; ; width: 95px; height: 41px;
+              background-size: 100px 40px; " onclick="alert('You pressed the button!')"
+                    ;="" type="button"></button>
+                    
+                    <br>
+              
+              
+              
+                    <br>
+                  
+                    <button style="background-color: black; border-radius: 100px; background-size: 100px 40px;;border:2px solid lightblue; ; width: 40px; height: 40px; color: white;" type="button"  onclick="alert('You pressed the button!')" >3</button>
+                    <br>
+                    <br>
+                    <h4 style="color: lightblue;"> Add Forcecoin to your coin98 Wallet</h4>
+        
+              
+              
+        
+             
+              
+        
+              
+              
+              
+              
+        
+              
+              
+              
+        
+                    
+                    <br>
+              
+              
+              
+                    <img  class="shop-item-image" src="uparrow.PNG" width="200" height="25">
+                    <br>
+                    <br>
+        
+        <button style="background-color: black; border-radius: 100px; background-size: 100px 40px;;border:2px solid lightblue; ; width: 40px; height: 40px; color: white;" type="button"  onclick="alert('You pressed the button!')" >4</button>
+        <br>
+        
+        <h4 style="color: lightblue;"> Swap BNB for Forcecoin token Address releasing soon:</h3>
+        
 
 <!-- The text field -->
-<input style="color: white; background-color: black; width: 350px; height: 50px; border-radius: 20px;" type="text" value="0x30" id="myInput">
+<input style="color: white; background-color: black; width: 350px; height: 50px; border-radius: 20px;" type="text" value="11/01/21" id="myInput">
 <br>
 <br>
 <!-- The button used to copy the text -->
@@ -421,14 +433,13 @@ background-size: 100px 40px; " onclick="alert('You pressed the button!')"
 
 <img  class="shop-item-image" src="uparrow.PNG" width="200" height="25">
 <br>
-<br>
-<br>
+
 
 <br>
 <br>
 
 </div>
-<div style="background-image: url(h1.PNG);"  class="col-md-12">
+<div style="background-image: url(blackspace1.jpg);"  class="col-md-12">
   
    
   <div id="camj">
@@ -460,13 +471,17 @@ background-size: 100px 40px; " onclick="alert('You pressed the button!')"
     <h3  style="color: lightblue;"> Quick Start Guide</h3>
     <br>
   
-
-    <button style="background-color: black; border-radius: 100px; background-size: 100px 40px;;border:2px solid lightblue; ; width: 40px; height: 40px; color: white;" type="button"  onclick="alert('You pressed the button!')" >1</button>
+    <h4 style="color: lightblue;"> Click below to read the pdf Instructions</h3>
+    
+      <button style="background-color: purple; border-radius: 25px; background-size: 100px 40px;;border:2px solid lightblue; ; width: 105px; height: 55px; color: white;" type="button"  onclick="location.href=&#39; https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/forcecoin7/123/blob/main/Forcecoin%20Instructions.pdf/?hl=en&#39;;" >Instructions</button>
+      <br>
+      <br>
+       <button style="background-color: black; border-radius: 100px; background-size: 100px 40px;;border:2px solid lightblue; ; width: 40px; height: 40px; color: white;" type="button"  onclick="alert('You pressed the button!')" >1</button>
 <br>
 
 
 
-<h4 style="color: lightblue;"> Create a Trustwallet and Metamask</h4>
+<h4 style="color: lightblue;"> Create a Trustwallet and Coin98 Wallet</h4>
 
 
 
@@ -476,7 +491,7 @@ background-size: 100px 40px; " onclick="alert('You pressed the button!')"
 background-size: 100px 40px; " onclick="location.href=&#39https://trustwallet.com&#39;;"
       ;="" type="button"></button>
 
-      <button class="btn btn-primary shop-item-button" style="background-image: url(metamask.PNG);border: none; ; width: 95px; height: 41px;
+      <button class="btn btn-primary shop-item-button" style="background-image: url(90.PNG);border: none; ; width: 93px; height: 43px;
 background-size: 100px 40px; " onclick="location.href=&#39https://metamask.io&#39;;"
       ;="" type="button"></button>
       
@@ -488,41 +503,6 @@ background-size: 100px 40px; " onclick="location.href=&#39https://metamask.io&#3
       <button style="background-color: black; border-radius: 100px; background-size: 100px 40px;;border:2px solid lightblue; ; width: 40px; height: 40px; color: white;" type="button"  onclick="alert('You pressed the button!')" >2</button>
       <br>
      
-
-      <h4 style="color: lightblue;"> Connect metamask to Smartchain network</h4>
-
-      <input style="color: white; background-color: black; width: 100px; height: 50px; border-radius: 20px;" type="text" value="Smart Chain" id="myInput">
-      <button style="background-color: purple; border-radius: 20px;" onclick="myFunction()">Copy </button>
-      <br>
-      <input style="color: white; background-color: black; width: 100px; height: 50px; border-radius: 20px;" type="text" value="https://bsc-dataseed.binance.org/" id="myInput1">
-      <button style="background-color: purple; border-radius: 20px;" onclick="myFunction1()">Copy </button>
-      <br>
-   
-      <input style="color: white; background-color: black; width: 50px; height: 50px; border-radius: 20px;" type="text" value="56" id="myInput2">
-      <button style="background-color: purple; border-radius: 20px;" onclick="myFunction2()">Copy </button>
-      <br>
-   
-      
-      <input style="color: white; background-color: black; width: 56px; height: 50px; border-radius: 20px;" type="text" value=" BNB" id="myInput3">
-      <button style="background-color: purple; border-radius: 20px;" onclick="myFunction3()">Copy </button>
-      <br>
-   
-      <input style="color: white; background-color: black; width: 100px; height: 50px; border-radius: 20px;" type="text" value="https://bscscan.com" id="myInput4">
-      <button style="background-color: purple; border-radius: 20px;" onclick="myFunction4()">Copy </button>
-      
-      
-
-      <br>
-
-
-      <br>
-
-      <button style="background-color: black; border-radius: 100px; background-size: 100px 40px;;border:2px solid lightblue; ; width: 40px; height: 40px; color: white;" type="button"  onclick="alert('You pressed the button!')" >3</button>
-      <br>
-      
-      
-      
-      
       <h4 style="color: lightblue;"> Buy BNB on Trustwallet</h4>
       
       
@@ -531,6 +511,32 @@ background-size: 100px 40px; " onclick="location.href=&#39https://metamask.io&#3
             <button class="btn btn-primary shop-item-button" style="background-image: url(bnb1.PNG);border: none; ; width: 95px; height: 41px;
       background-size: 100px 40px; " onclick="alert('You pressed the button!')"
             ;="" type="button"></button>
+            
+            <br>
+      
+      
+      
+            <img  class="shop-item-image" src="uparrow.PNG" width="200" height="25">
+            <br>
+            <br>
+            <button style="background-color: black; border-radius: 100px; background-size: 100px 40px;;border:2px solid lightblue; ; width: 40px; height: 40px; color: white;" type="button"  onclick="alert('You pressed the button!')" >3</button>
+      <h4 style="color: lightblue;"> Add Forcecoin to your coin98 Wallet</h4>
+
+      
+      
+
+     
+      
+
+      
+      
+      
+      
+
+      
+      
+      
+
             
             <br>
       
@@ -567,7 +573,7 @@ background-size: 100px 40px; " onclick="location.href=&#39https://metamask.io&#3
 
 <br>
 <br>
-<h3 style="color: lightblue;"> Need support? Contact us 24/7  forcecoin7@gmail.com</h3>
+<h3 style="color: lightblue;"> Need support? Contact us 24/7 forcecoin7@gmail.com or DM @Forcecoin1</h3>
 
 
           <button class="btn btn-primary shop-item-button" style="background-image: url(twit.PNG);border: none; ; width: 95px; height: 42px;
@@ -586,18 +592,18 @@ background-size: 100px 40px; " onclick="location.href=&#39https://metamask.io&#3
                 ;="" type="button"></button>
 
   
-      <div class="col-md-12">
+      <div style="background-image: url(h12.png);" class="col-md-12">
    
        
         
 
-      </div>
+     
      
      
       
   
     
-    <form id="Crypto1" style="background-color: black; color:limegreen; border-radius: 20px;  " action="mailto:forcecoin7@gmail.com" method="post" enctype="text/plain">
+    <form id="Crypto1" style="background-image: url(h12.png); color:limegreen; border-radius: 20px;  " action="mailto:forcecoin7@gmail.com" method="post" enctype="text/plain">
     
       
     
@@ -619,87 +625,14 @@ background-size: 100px 40px; " onclick="location.href=&#39https://metamask.io&#3
     
     </form>
 
-    
+</div>
 
     
     <br>  
 
-    <link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/gh/bitquery/widgets@v1.3.8/dist/assets/css/widgets.css">
-<script src="https://cdn.jsdelivr.net/gh/bitquery/widgets@v1.3.8/dist/widgets.js"></script>
-<div id="trades_by_time"></div>
-<script>
-    (function(){
-    widgets.init('https://graphql.bitquery.io', 'BQY8IPItkNCP0iK8BqvmhSWV1px51210', {locale: 'en', theme: 'light'});
-    var query = new widgets.query(`
-            query ($network: EthereumNetwork!,
-                  $dateFormat: String!,
-                  $token: String!,
-                  $from: ISO8601DateTime,
-                  $till: ISO8601DateTime){
-                    ethereum(network: $network ){
-                      dexTrades(options:{asc: "date.date"}, date: {
-                        since: $from
-                        till: $till}
-                        baseCurrency: {is: $token}
-                      ) {
-                        date: date{
-                          date(format: $dateFormat)
-                        }
-
-                            trades: count
-                            amount: baseAmount
-                            baseCurrency{symbol}
-                            contracts: count(uniq: smart_contracts)
-                            currencies: count(uniq: quote_currency)
-
-                      }
-                    }
-                  }`);
-    var wdts = new widgets.chartByTime('#trades_by_time', query, 'ethereum.dexTrades', {
- "title": "Trades by time",
- "chartOptions": {
-   
-  "vAxes": {
-   
-   "0": {
     
-    "title": "FRC Trades Count",
-  
 
-   }
-  },
-  "seriesType": "bars",
-  "series": {
-   "0": {
-    "color": "#800080"
-   }
-  }
- },
- "dataOptions": [
-  {
-   "title": {
-    "label": "Date",
-    "type": "date",
-    
-   },
-   "path": "date.date"
-   
-  },
-  {
-   "title": " FRC Trades Volume",
-   "path": "trades"
-  }
-
-  
- ]
-});
-    query.request( {"limit": 10, "offset": 0, "network": "bsc", "token": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c", "from": null, "till": null, "dateFormat": "%Y-%m"} );
-    })()
-
-    
-</script>
-
-<h3 style="color:purple;"> Forcecoin Transactions (Test Mode)</h3>
+<h3 style="color:purple;"> Forcecoin Transactions </h3>
 <br>
 <link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/gh/bitquery/widgets@v1.3.8/dist/assets/css/widgets.css">
 <script src="https://cdn.jsdelivr.net/gh/bitquery/widgets@v1.3.8/dist/widgets.js"></script>
@@ -722,7 +655,6 @@ background-size: 100px 40px; " onclick="location.href=&#39https://metamask.io&#3
                     date: {since: $from till: $till },
                     smartContractAddress: {is: $address}) {
                       
-
                     block {
                       
                       timestamp {
@@ -735,12 +667,10 @@ background-size: 100px 40px; " onclick="location.href=&#39https://metamask.io&#3
                       name
                       signatureHash
                     }
-
                     address: caller {
                       address
                       annotation
                     }
-
                     transaction {
                       hash
                     }
@@ -902,6 +832,7 @@ function myFunction4() {
        
         <marquee behavior="scroll" direction="right">   
           <p><span id="datetime"></span></p>
+          
       
       <script>
       var dt = new Date();
