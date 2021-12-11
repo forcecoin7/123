@@ -163,15 +163,6 @@
   padding: 30px;
 }
 
-.u-section-2 .u-carousel-item-6 {
-  margin-right: 0;
-}
-
-.u-section-2 .u-over-slide-6 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
-  padding: 30px;
-}
-
 .u-section-2 .u-carousel-control-1 {
   position: absolute;
   left: -78px;
@@ -303,7 +294,6 @@
   }
 
   .u-section-2 .u-gallery-1 {
-    margin-top: 17px;
     margin-right: initial;
     margin-left: initial;
     width: auto;
@@ -311,7 +301,7 @@
 
   .u-section-2 .u-text-2 {
     width: auto;
-    margin-top: 47px;
+    margin-top: 56px;
     margin-right: -52px;
     margin-left: 0;
   }
@@ -535,7 +525,7 @@
     margin: 73px 0 32px;
   }
 } .u-section-4 {
-  background-image: linear-gradient(#f1b5b8, #adcce9);
+  background-image: linear-gradient(#adcce9, #f1b5b8);
 }
 
 .u-section-4 .u-sheet-1 {
