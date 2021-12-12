@@ -480,7 +480,7 @@
 
 @media (max-width: 575px) {
   .u-section-3 .u-sheet-1 {
-    min-height: 525px;
+    min-height: 418px;
   }
 
   .u-section-3 .u-image-1 {
@@ -522,7 +522,7 @@
     font-size: 1.125rem;
     align-self: center;
     text-transform: uppercase;
-    margin: 171px auto 46px;
+    margin: 103px 28px 6px auto;
     padding: 14px 60px 15px;
   }
 } .u-section-4 {
@@ -613,7 +613,7 @@
 
   .u-section-4 .u-video-1 {
     height: 191px;
-    margin-top: 42px;
+    margin-top: 36px;
     width: auto;
     margin-right: initial;
     margin-left: initial;
