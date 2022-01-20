@@ -98,7 +98,8 @@
       <div class="u-clearfix u-sheet u-sheet-1">
         <h2 class="u-text u-text-white u-text-1">subscribe for EARLY ACCESS</h2>
         <div class="u-form u-form-1">
-          <form action="mailto:forcecoin7@gmail.com" method="POST" enctype="text/plain" class="u-clearfix u-form-horizontal u-form-spacing-15 u-inner-form" style="padding: 15px;" source="customphp">
+
+          <form action="mailto:forcecoin7@gmail.com" method="post" class="u-clearfix u-form-horizontal u-form-spacing-15 u-inner-form" style="padding: 15px;" source="customphp">
             <div class="u-form-group u-form-name">
               <label for="name-ef64" class="u-form-control-hidden u-label">Name</label>
               <input type="text" placeholder="Name" id="name-ef64" name="name" class="u-border-1 u-border-grey-30 u-input u-input-rectangle" required="">
@@ -108,10 +109,22 @@
               <input type="email" placeholder="Email" id="email-ef64" name="email" class="u-border-1 u-border-grey-30 u-input u-input-rectangle" required="">
             </div>
             <div class="u-form-group u-form-submit">
-              <a href="#" class="u-btn u-btn-submit u-button-style">Submit</a>
-              <input type="submit" value="Send" class="u-form-control-hidden">
-            
+              <input type="submit" value="Send" class="u-btn-submit u-button-style">Submit</a>
+      
           </form>
+
+          <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+            Name:<br>
+            <input type="text" name="name"><br>
+            E-mail:<br>
+            <input type="text" name="mail"><br>
+            Comment:<br>
+            <input type="text" name="comment" size="50"><br><br>
+            <input type="submit" value="Send">
+            <input type="reset" value="Reset">
+            </form>
+
+
         </div>
       </div>
     </section>
