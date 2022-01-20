@@ -118,8 +118,11 @@
           </form>
 
           <form action="mailto:someone@example.com" class="u-clearfix u-form-horizontal u-form-spacing-15 u-inner-form" style="padding: 15px;" source="customphp" method="post" enctype="text/plain">
-            Name:<br>
-            <input type="text" class="u-form-group u-form-name" name="name"><br>
+            <div class="u-form-group u-form-name">
+              <label for="name-ef64" class="u-form-control-hidden u-label">Name</label>
+              
+  
+            <input type="text" placeholder="Name"  name="name"><br>
             E-mail:<br>
             <input type="text" name="mail"><br>
             Comment:<br>
