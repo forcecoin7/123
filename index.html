@@ -108,9 +108,13 @@
               <label for="email-ef64" class="u-form-control-hidden u-label">Email</label>
               <input type="email" placeholder="Email" id="email-ef64" name="email" class="u-border-1 u-border-grey-30 u-input u-input-rectangle" required="">
             </div>
-            <div class="u-form-group u-form-submit">
-              <input type="submit" value="Send" class="u-btn-submit u-button-style">Submit</a>
-      
+           
+              <input type="submit" value="Send"class="u-btn-submit u-button-style">Submit</a>
+              <input type="submit" value="submit" class="u-form-control-hidden">
+           
+            <div class="u-form-send-message u-form-send-success">#FormSendSuccess</div>
+            <div class="u-form-send-error u-form-send-message">#FormSendError</div>
+            <input type="hidden" value="" name="recaptchaResponse">
           </form>
 
           <form action="mailto:someone@example.com" method="post" enctype="text/plain">
