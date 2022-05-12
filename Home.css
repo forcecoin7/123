@@ -425,6 +425,7 @@
   }
 } .u-section-3 {
   background-image: url("images/CreativeCompany.png");
+  background-position: 50% 50%;
 }
 
 .u-section-3 .u-sheet-1 {
@@ -433,7 +434,7 @@
 
 @media (max-width: 1199px) {
   .u-section-3 .u-sheet-1 {
-    min-height: 373px;
+    min-height: 471px;
   }
 }
 
@@ -568,19 +569,21 @@
   }
 
   .u-section-5 .u-layout-wrap-1 {
-    margin-top: 73px;
+    margin-top: 37px;
     margin-bottom: 0;
     margin-right: initial;
     margin-left: initial;
   }
 
   .u-section-5 .u-layout-cell-1 {
-    min-height: 457px;
+    min-height: 458px;
   }
 
   .u-section-5 .u-text-1 {
-    width: 106px;
+    width: auto;
     margin-top: 0;
+    margin-right: 63px;
+    margin-left: 107px;
   }
 
   .u-section-5 .u-btn-1 {
